@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body class="bg-slate-400">
+    <div class="flex flex-wrap w-full gap-6  items-center justify-center" id="container">
+        <% result2.forEach( p=> {%>
+           <div class="mt-5 p-1 border  bg-red-300 border-black rounded-md ">
+                <p><%= p.name %></p>
+                <p><%= p.description %></p>
+                <img src=<%=p.image %> alt="">
+                      
+           </div>
+        
+    <% }) %></div>
+</body>
+</html>
